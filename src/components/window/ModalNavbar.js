@@ -5,22 +5,23 @@ function ModalNavbar() {
   // Set up a state to toggle the modal navbar
   const [showModal, setShowModal] = useState(false);
 
-  // Toggle the modal navbar when the window has been offset to at least 200px
-  const handleModal = () => {
-    if (window.scrollY > 200) {
-      setShowModal(true);
-    } else {
-      setShowModal(false);
-    }
-  };
-
+  
   // Create an event on the window to trigger the offset check
   useEffect(() => {
+    // Toggle the modal navbar when the window has been offset to at least 200px
+    const handleModal = () => {
+      if (window.scrollY > 200) {
+        setShowModal(true);
+      } else {
+        setShowModal(false);
+      }
+    };
+
     window.addEventListener('scroll', handleModal);
     return () => {
       window.removeEventListener('scroll', handleModal);
     };
-  }, [handleModal]);
+  });
 
   // See the map explanation in the navbar.js file
   const modalMenu = menuList.map((item) => (
