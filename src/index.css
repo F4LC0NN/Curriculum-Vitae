@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+  /* COLORS */
+  --orange: #ef9f63;
+  --purple: #52238c;
+  --bright-grey: #efefef;
+  --white: #ffffff;
+  --light-grey: #777777;
+  --grey: #333333;
+  --dark-grey: #222222;
+  --transparent-grey: #33333325;
+
+  /* EFFECTS */
+  --vertical-shadow: 0 4px 4px var(--transparent-grey);
+  --horizontal-shadow: 4px 0 4px var(--transparent-grey);
+  
+  /* FONT SIZES */
+  --xxxl: 60px;
+  --xxl: 54px;
+  --xl: 48px;
+  --lg1: 40px;
+  --lg2: 36px;
+  --lg3: 32px;
+  --md1: 28px;
+  --md2: 24px;
+  --semi: 18px;
+  --normal: 16px;
+  --sm: 14px;
+  --xs: 12px;
+  --xxs: 10px;
+
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: auto;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  color: var(--dark-grey);
+  background-color: var(--bright-grey);
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}

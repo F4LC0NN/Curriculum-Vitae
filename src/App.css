@@ -1,0 +1,999 @@
+/*
+-----------------------------------
+APP
+-----------------------------------
+*/
+
+h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: var(--md1);
+}
+
+h2 {
+  font-size: var(--semi);
+}
+
+h3 {
+  font-size: var(--normal);
+  font-weight: 400;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p, li {
+  font-size: var(--sm);
+  font-weight: 400;
+}
+
+/*
+-----------------------------------
+MODAL
+-----------------------------------
+*/
+
+/* MODAL NAVBAR */
+.navbar-visible {
+  display: none;
+}
+
+.navbar-hidden {
+  display: none;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    top: -10rem;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+/*
+-----------------------------------
+HEADER
+-----------------------------------
+*/
+
+/* BURGER MENU */
+.burger-menu-button-container {
+  width: 100%;
+  height: fit-content;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.burger-menu-button {
+  border: none;
+  background-color: transparent;
+}
+
+.burger-menu-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.burger-menu-container-hidden {
+  display: none;
+}
+
+.burger-menu-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15rem;
+  height: 100%;
+  display: block;
+  background-color: var(--purple);
+  animation: slideLeft 200ms ease-in-out;
+  z-index: 9999;
+}
+
+.burger-menu {
+  border-radius: 0.5rem;
+}
+
+.close-burger-menu-button {
+  width: 100%;
+  height: fit-content;
+  padding: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+}
+
+.close-burger-menu-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.burger-menu-link {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.burger-menu-item {
+  padding: 1rem;
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    right: -10rem;
+  }
+  to {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+/* HERO */
+.hero {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+
+.hero-text {
+  display: inline-block;
+}
+
+.highlight-title {
+  color: var(--purple);
+  text-shadow: var(--vertical-shadow);
+}
+
+.hero-text-subtitle {
+  margin-bottom: 1rem;
+}
+
+.para1 {
+  margin-bottom: 1rem;
+}
+
+.highlight-text1 {
+  font-weight: bold;
+  color: var(--purple);
+}
+
+.para2 {
+  font-weight: bold;
+}
+
+.hero-text-item {
+  margin: 1rem 0 1rem 2rem;
+}
+
+.highlight-text2 {
+  font-weight: bold;
+  color: var(--orange);
+}
+
+.hero-image {
+  object-fit: cover;
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 2rem;
+}
+
+/* BANNER */
+.banner {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  color: var(--white);
+  background-color: var(--purple);
+}
+
+.banner-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.banner-icon {
+  object-fit: cover;
+  width: fit-content;
+  height: 3rem;
+}
+
+/*
+--------------------------------------
+MAIN
+--------------------------------------
+*/
+
+/*
+--- EXPERIENCE ---
+*/
+.experience {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-title {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* EXPERIENCE INTRO */
+.experience-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* INTRO LEFT */
+.intro-left-container {
+  margin: 0 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.intro-left-para {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.intro-left-list {
+  padding-left: 2rem;
+}
+
+/* INTRO RIGHT */
+.intro-right-container {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.vertical-bar {
+  width: 0.5rem;
+  height: 3.5rem;
+  border-radius: 2rem;
+  background-color: var(--orange);
+}
+
+/* JOBS */
+.job-card-list {
+  width: 100%;
+  height: fit-content;
+}
+
+.job-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.job-card:nth-child(1), .job-card:nth-child(3) {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/* CARD LEFT */
+
+.card-left {
+  margin-bottom: 1rem;
+  padding: 0 2rem;
+}
+
+.card-left-title {
+  text-align: center;
+  color: var(--purple);
+  margin-bottom: 0.5rem;
+}
+
+.job-place {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-left-subtitle {
+  font-style: italic;
+  color: var(--light-grey);
+}
+
+.card-left-task-list {
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.card-left-task-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-left-tick {
+  object-fit: cover;
+  width: 1rem;
+  height: fit-content;
+}
+
+/* CARD RIGHT */
+
+.card-right {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-right-image {
+  object-fit: cover;
+  width: 100%;
+  height: 20rem;
+  border-radius: 1rem;
+  box-shadow: var(--vertical-shadow);
+}
+
+#img01, #img03 {
+  object-position: top right;
+}
+
+/*
+--- PROJECTS ---
+*/
+
+.projects {
+  width: 100%;
+}
+
+.projects-title {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-list {
+  display: grid;
+  gap: 2rem;
+}
+
+/* CAROUSEL */
+.carousel-container {
+  width: 100%;
+  height: fit-content;
+}
+
+/* PROJECT CARD */
+.project-card {
+  width: 20rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  background-color: var(--white);
+  box-shadow: var(--vertical-shadow);
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-card-image {
+  object-fit: cover;
+  object-position: top middle;
+  width: 100%;
+  height: 40%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.project-card-title {
+  color: var(--purple);
+  font-weight: bold;
+}
+
+.project-card-button-container {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project-card-link {
+  display: block;
+}
+
+.project-card-project-button  {
+  width: 10rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 2rem;
+  color: var(--white);
+  background-color: var(--orange);
+}
+
+.project-card-code-button {
+  width: 10rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 2rem;
+  color: var(--orange);
+  background-color: transparent;
+}
+
+.button-invisible {
+  visibility: hidden;
+}
+
+/*
+--- TRAINING ---
+*/
+
+.training {
+  width: 100%;
+}
+
+.training-title {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.curriculum-list {
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.curriculum-item {
+  margin-bottom: 2rem;
+}
+
+.training-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.training-card-title {
+  color: var(--purple);
+}
+
+.training-card-place {
+  display: flex;
+  gap: 1rem;
+}
+
+.training-card-subtitle {
+  font-style: italic;
+  color: var(--light-grey);
+}
+
+.training-card-task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.training-card-task-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.training-card-task-tick {
+  width: 1rem;
+  height: 1rem;
+}
+
+/*
+--- SKILLS ---
+*/
+
+.skills {
+  width: 100%;
+}
+
+.skills-title {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-skill-list {
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.my-skill-container {
+  width: 100%;
+  height: fit-content;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  color: var(--white);
+  box-shadow: var(--vertical-shadow);
+}
+
+.my-skill-container:first-child {
+  background-color: var(--orange);
+}
+
+.my-skill-container:last-child {
+  background-color: var(--purple);
+}
+
+.single-skill-title {
+  margin: 1rem;
+  font-weight: bold;
+}
+
+.single-skill-item {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+/*
+--- CONTACTS ---
+*/
+
+.contacts {
+  width: 100%;
+}
+
+.contacts-title {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coordinates-container {
+  background-color: var(--purple);
+}
+
+.coordinates-list {
+  width: 100%;
+}
+
+.coordinates-item {
+  padding: 2rem;
+}
+
+.coordinates-link {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.coordinates-image {
+  width: 2rem;
+  height: 2rem;
+}
+
+.coordinates-contact-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.coordinates-text {
+  font-weight: bold;
+}
+
+.coordinates-text2 {
+  font-style: italic;
+}
+
+/*
+--------------------------------------
+FOOTER
+--------------------------------------
+*/
+
+footer {
+  width: 100%;
+  height: 100vh;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-title {
+  margin-bottom: 2rem;
+}
+
+.footer-para {
+  margin-bottom: 1rem;
+}
+
+/*
+--------------------------------------
+MEDIA QUERY
+--------------------------------------
+*/
+
+@media screen and (min-width: 480px) {
+
+  /*
+  -----------------------------------
+  HEADER
+  -----------------------------------
+  */
+  
+  .hero-text {
+    margin: auto;
+  }
+  
+  .hero-image {
+    margin: auto;
+    transform: scale(0.8);
+  }
+  
+  /*
+  -----------------------------------
+  MAIN
+  -----------------------------------
+  */
+  
+  /*
+  --- PROJECTS ---
+  */
+  
+  .project-list {
+    padding: 2rem;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+  
+  .project-list::-webkit-scrollbar {
+    height: 0.5rem;
+  }
+  
+  .project-list::-webkit-scrollbar-thumb {
+    background: var(--purple);
+    border-radius: 10px;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+
+  /*
+  -----------------------------------
+  HEADER
+  -----------------------------------
+  */
+  
+  /*
+  --- NAVBAR ---
+  */
+  
+  .menu {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bright-grey);
+  }
+  
+  .menu-link {
+    text-decoration: none;
+    color: var(--dark-grey);
+  }
+  
+  .menu-item {
+    padding: 2rem;
+    color: var(--dark-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu-item:hover {
+    color: var(--white);
+    background-color: var(--purple);
+  }
+  
+  .menu-title {
+    font-weight: bold;
+  }
+  
+  /*
+  -----------------------------------
+  MODAL
+  -----------------------------------
+  */
+  
+  /*
+  --- MODAL NAVBAR ---
+  */
+  
+  .navbar-visible {
+    position: fixed;
+    width: 100%;
+    display: block;
+    background-color: var(--white);
+    box-shadow: var(--vertical-shadow);
+    animation: slideDown 200ms ease-in-out;
+    z-index: 9999;
+  }
+
+  .navbar-hidden {
+    display: none;
+  }
+
+  .modal-menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-menu-link {
+    text-decoration: none;
+    color: var(--dark-grey);
+  }
+
+  .modal-menu-item {
+    padding: 2rem;
+  }
+
+  .modal-menu-item:hover {
+    color: var(--white);
+    background-color: var(--purple);
+  }
+
+  .modal-menu-title {
+    font-weight: bold;
+  }
+
+  /*
+  -----------------------------------
+  EXPERIENCE
+  -----------------------------------
+  */
+
+  .experience-title {
+    height: 30vh;
+  }
+
+  /*
+  -----------------------------------
+  PROJECTS
+  -----------------------------------
+  */
+
+  .projects-title {
+    height: 30vh;
+  }
+
+  .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-list {
+    width: 95%;
+  }
+
+  /*
+  -----------------------------------
+  TRAINING
+  -----------------------------------
+  */
+
+  .training-title {
+    height: 30vh;
+  }
+
+  /*
+  -----------------------------------
+  SKILLS
+  -----------------------------------
+  */
+
+  .skills-title {
+    height: 30vh;
+  }
+
+  /*
+  -----------------------------------
+  CONTACTS
+  -----------------------------------
+  */
+
+  .contacts-title {
+    height: 30vh;
+  }
+
+  .coordinates-item {
+    width: 35%;
+    margin: auto;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  /*
+  -----------------------------------
+  HEADER
+  -----------------------------------
+  */
+
+  .hero {
+    width: 100%;
+    height: 45vh;
+    flex-direction: row;
+    padding: 0 4rem;
+  }
+
+  .hero-image {
+    object-fit: contain;
+    width: 50%;
+    height: 100%;
+  }
+
+  .banner {
+    height: 40vh;
+  }
+
+  .banner-list {
+    display: flex;
+    gap: 4rem;
+  }
+
+  /*
+  -----------------------------------
+  EXPERIENCE
+  -----------------------------------
+  */
+
+  .card-left-task-list {
+    justify-content: center;
+  }
+
+  /*
+  -----------------------------------
+  PROJECTS
+  -----------------------------------
+  */
+
+  .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-list {
+    width: 70%;
+  }
+
+  /*
+  -----------------------------------
+  CONTACTS
+  -----------------------------------
+  */
+
+  .coordinates-item {
+    width: 20%;
+    margin: auto;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+  /*
+  -----------------------------------
+  HEADER
+  -----------------------------------
+  */
+
+  .hero {
+    width: 100%;
+    height: 45vh;
+    flex-direction: row;
+    padding: 0 4rem;
+  }
+
+  .hero-image {
+    width: 50%;
+  }
+
+  .banner {
+    height: 40vh;
+  }
+
+}
+
+@media screen and (min-width: 1600px) {
+  /*
+  -----------------------------------
+  EXPERIENCE
+  -----------------------------------
+  */
+
+  .card-right-image {
+    height: 40rem;
+  }
+
+  /*
+  -----------------------------------
+  PROJECTS
+  -----------------------------------
+  */
+
+  .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-list {
+    width: 58%;
+  }
+
+  /*
+  -----------------------------------
+  CONTACTS
+  -----------------------------------
+  */
+
+  .coordinates-item {
+    width: 15%;
+    margin: auto;
+  }
+}
