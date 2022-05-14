@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/Curriculum-Vitae/static/css/main.5a2131ba.css",
+    "main.js": "/Curriculum-Vitae/static/js/main.372df475.js",
+    "static/js/787.d516a3ff.chunk.js": "/Curriculum-Vitae/static/js/787.d516a3ff.chunk.js",
+    "static/media/scribe.png": "/Curriculum-Vitae/static/media/scribe.384d4989d34fc5916bcf.png",
+    "static/media/LVV.png": "/Curriculum-Vitae/static/media/LVV.55401d002021810afa71.png",
+    "static/media/DSA.png": "/Curriculum-Vitae/static/media/DSA.77ac21760060c0aa4f41.png",
+    "static/media/trCreativ.png": "/Curriculum-Vitae/static/media/trCreativ.8e21a58629be2f1cfc75.png",
+    "static/media/studify.png": "/Curriculum-Vitae/static/media/studify.d2f8ec8a4f77b56b1e1c.png",
+    "static/media/fireWaterEarth.png": "/Curriculum-Vitae/static/media/fireWaterEarth.bebc8d34ab5bf72f1750.png",
+    "static/media/simpleCalc.png": "/Curriculum-Vitae/static/media/simpleCalc.dcd39c7b89f1f23f6b7e.png",
+    "static/media/etchASketch.png": "/Curriculum-Vitae/static/media/etchASketch.336b88628f475e0ef17c.png",
+    "static/media/dropTheHithat.png": "/Curriculum-Vitae/static/media/dropTheHithat.795e876b66b10dd70fe7.png",
+    "static/media/profil-image.svg": "/Curriculum-Vitae/static/media/profil-image.dc5e1c9833e6b8617feccd4c3723d688.svg",
+    "static/media/photo-footer.svg": "/Curriculum-Vitae/static/media/photo-footer.8b66c10291eac0cc5f9f6c72d5ca3f1a.svg",
+    "static/media/web.svg": "/Curriculum-Vitae/static/media/web.bb37dbbb02180aedb01d7a261cdaa25b.svg",
+    "static/media/mail.svg": "/Curriculum-Vitae/static/media/mail.f25f364044718b97d114d910354cf45d.svg",
+    "static/media/github.svg": "/Curriculum-Vitae/static/media/github.805053b4dd6435c677c14068beca6813.svg",
+    "static/media/linkedin.svg": "/Curriculum-Vitae/static/media/linkedin.c924cf919b8b78f232637fbd835e8e62.svg",
+    "static/media/locate.svg": "/Curriculum-Vitae/static/media/locate.c7770814d63e176b6c58cd3396509215.svg",
+    "index.html": "/Curriculum-Vitae/index.html",
+    "static/media/close-burger.svg": "/Curriculum-Vitae/static/media/close-burger.f4ea527d5bf591c08a780afbf92f930a.svg",
+    "static/media/burger.svg": "/Curriculum-Vitae/static/media/burger.b1441e852e7e9b01f5cbbf4d779cbf9b.svg",
+    "static/media/phone.svg": "/Curriculum-Vitae/static/media/phone.11dd4cf1cfbd16a3720452f6f2a862df.svg",
+    "static/media/back-to-top.svg": "/Curriculum-Vitae/static/media/back-to-top.c50fdce796aef354e0b27a0796a57e42.svg",
+    "static/media/tick.svg": "/Curriculum-Vitae/static/media/tick.4d145291c48f2ce6b401590dc99ed485.svg",
+    "main.5a2131ba.css.map": "/Curriculum-Vitae/static/css/main.5a2131ba.css.map",
+    "main.372df475.js.map": "/Curriculum-Vitae/static/js/main.372df475.js.map",
+    "787.d516a3ff.chunk.js.map": "/Curriculum-Vitae/static/js/787.d516a3ff.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5a2131ba.css",
+    "static/js/main.372df475.js"
+  ]
+}
